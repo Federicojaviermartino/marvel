@@ -28,7 +28,7 @@ const store = createStore({
     actions: {
         async fetchCharacters({ commit }) {
             try {
-                const response = await fetchDataFromMarvelAPI(); // Reemplaza esto con tu llamada a la API real
+                const response = await fetchDataFromMarvelAPI();
                 commit('SET_CHARACTERS', response.data.data.results);
             } catch (error) {
                 console.error('Error al obtener personajes:', error);
