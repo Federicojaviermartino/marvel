@@ -4,7 +4,6 @@
         <p>{{ character.description }}</p>
     </div>
 </template>
-  
 <script>
 export default {
     props: {
@@ -12,4 +11,3 @@ export default {
     },
 }
 </script>
-  

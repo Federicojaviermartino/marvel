@@ -6,7 +6,6 @@
         <CharacterDetail :character="selectedCharacter" />
     </div>
 </template>
-  
 <script>
 import { computed } from 'vue'
 import { useMarvelStore } from '../store'
