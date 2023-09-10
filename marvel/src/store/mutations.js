@@ -14,7 +14,7 @@ export const useMarvelStore = defineStore('marvel', {
     actions: {
         async fetchCharacters() {
             try {
-                const charactersData = await fetchDataFromMarvelAPI(); // Reemplaza esto con tu llamada a la API real
+                const charactersData = await fetchDataFromMarvelAPI();
                 this.characters = charactersData;
             } catch (error) {
                 console.error('Error al obtener personajes:', error);
@@ -22,7 +22,7 @@ export const useMarvelStore = defineStore('marvel', {
         },
         async fetchCharacterDetails(characterId) {
             try {
-                const characterData = await fetchDataFromMarvelAPI(characterId); // Reemplaza esto con tu llamada a la API real
+                const characterData = await fetchDataFromMarvelAPI(characterId);
                 this.selectedCharacter = characterData;
             } catch (error) {
                 console.error('Error al obtener detalles del personaje:', error);

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const publicKey = 'https://developer.marvel.com/';
-const privateKey = 'https://developer.marvel.com/';
+const publicKey = 'TU_CLAVE_PUBLICA_DE_MARVEL';
+const privateKey = 'TU_CLAVE_PRIVADA_DE_MARVEL';
 const baseURL = 'https://developer.marvel.com/';
 
 function getHash() {
