@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 const publicKey = 'CLAVE_PUBLICA_DE_MARVEL';
-const privateKey = 'CLAVE_PRIVADA_DE_MARVEL';
+// const privateKey = 'CLAVE_PRIVADA_DE_MARVEL';
 const baseURL = 'https://developer.marvel.com/';
-
 function getHash() {
     const ts = Date.now().toString();
     const hash = Date.now().toString();
@@ -20,7 +19,7 @@ marvelService.interceptors.request.use((config) => {
     return config;
 });
 
-export async function fetchCharacters() {
+export async function fetchDataFromMarvelAPI() {
     try {
         const response = await marvelService.get('characters');
         return response.data.data.results;

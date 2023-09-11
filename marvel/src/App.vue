@@ -10,11 +10,16 @@
   </div>
 </template>
 
+
 <script>
+import { useStore } from 'pinia';
 export default {
   methods: {
     toggleDarkMode() {
-      this.$store.marvel.toggleDarkMode();
+      const store = useStore();
+      console.log(store.darkmode)
+      store.darkmode = !store.darkmode;
+      console.log(store.darkmode)
     },
   },
 };
